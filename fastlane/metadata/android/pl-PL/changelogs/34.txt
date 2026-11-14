@@ -1,0 +1,3 @@
+- Strativis mówi teraz w 15 językach: angielskim, francuskim, niderlandzkim, niemieckim, hiszpańskim, portugalskim, włoskim, polskim, tureckim, indonezyjskim, rosyjskim, japońskim, arabskim, urdu i hindi (menu > Język).
+- Czytelniejsze nazwy warstwowania przekątnego, zdolomityzowanych węglanów i frakcji ziarnowych.
+- Odstęp osi głębokości można teraz wybrać samodzielnie (Układ).

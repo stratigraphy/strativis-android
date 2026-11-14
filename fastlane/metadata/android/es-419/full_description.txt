@@ -1,0 +1,39 @@
+Strativis convierte tus notas de campo en columnas sedimentológicas limpias y listas para publicar, directamente en tu teléfono y totalmente sin conexión.
+
+Estrato a estrato
+- Añade estratos arriba, abajo o en cualquier punto intermedio; arrástralos para reordenarlos.
+- Cada estrato muestra una pequeña vista previa de su litología, tamaño de grano y forma.
+- Registra espesor, litología, tamaño de grano en la base y en el techo, contacto basal, forma del estrato, superficie de techo, bioturbación, estructuras internas y notas.
+- Guarda varias secciones en un mismo espacio de trabajo.
+
+Símbolos estándar
+- Unos 190 símbolos según las convenciones habituales de las columnas sedimentológicas: estructuras sedimentarias, paleocorrientes, fósiles, icnofósiles, rasgos diagenéticos y más.
+- Asocia símbolos directamente a un estrato o colócalos a cualquier nivel.
+- Columna de relieve (banco, nicho, rampa, redondeado), esquinas redondeadas y contactos convexos o cóncavos.
+- Barras de formación, miembro y biozona junto a la columna.
+
+Medidas de campo
+- Brújula-clinómetro: apoya el teléfono sobre un plano de estratificación, un foreset, una falla o una diaclasa para medir el buzamiento y la dirección de buzamiento, a lo largo de una lineación o un eje de pliegue para la dirección de inmersión y la inmersión, o apúntalo corriente abajo para las paleocorrientes. Se aplica la declinación magnética.
+- O escribe el rumbo y el buzamiento (regla de la mano derecha, notación por cuadrantes como N30E) o impórtalos desde CSV.
+- Columna de buzamientos (diagrama de renacuajos), estereograma (red de Schmidt) y diagrama de rosa de paleocorrientes con media vectorial.
+- Fotos de cada estrato desde la cámara o la galería, mostradas en la columna e incluidas en la exportación.
+- Espesor real del estrato a partir de la longitud de cinta, la dirección, la pendiente y el buzamiento de la estratificación.
+- Modo testigo: la profundidad aumenta hacia abajo para testigos y sondeos.
+- Muestras, curvas de datos (rayos gamma, susceptibilidad, isótopos, XRF), divisiones de Bouma, facies, cortejos sedimentarios y ciclos.
+
+Colores
+- Esquemas de color convencional, pastel o gris, o tu propio color para cada litología.
+- Elige colores en una carta de colores de rocas (Munsell aproximado), en una rueda de color o en una foto del afloramiento.
+
+PDF listo para publicar
+- Escala granulométrica siliciclástica o de Dunham, diseño combinado o de estructuras.
+- A4, A3, Carta o Legal; escalas verticales reales (1:10 a 1:1000) o ajuste a la página; varias columnas por página; leyenda automática.
+
+Compatible con R
+- Exporta una sección como ZIP con la tabla de estratos, los símbolos y un script de R, lista para los paquetes de R Strativis y StratigrapheR y para otras herramientas de R como WaverideR.
+- Guarda y abre proyectos (.strata.json) y exporta los estratos en CSV.
+
+Privado y gratuito
+- Sin cuenta, sin anuncios, sin rastreo. Tus datos se quedan en tu teléfono. El GPS solo se usa cuando tocas "Obtener posición GPS". Si Strativis te ayuda en tu trabajo, puedes apoyarlo con una donación (página Acerca de).
+
+Strativis ha sido desarrollado por el Dr. Michiel Arts (Petrología Sedimentaria, Departamento de Geología, Université de Liège). El motor de dibujo son los paquetes de R lithoglyph y Strativis, basados en StratigrapheR (Wouters et al. 2021, The R Journal), portados a JavaScript para que la aplicación funcione sin conexión y sin R. Los símbolos, las tramas y los colores siguen convenciones recopiladas, por ejemplo, en la leyenda de columnas de Sedimentology Utrecht y en Nichols (2009), Sedimentology and Stratigraphy.

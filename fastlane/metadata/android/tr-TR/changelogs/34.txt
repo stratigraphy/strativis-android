@@ -1,0 +1,3 @@
+- Strativis artık 15 dil konuşuyor: İngilizce, Fransızca, Felemenkçe, Almanca, İspanyolca, Portekizce, İtalyanca, Lehçe, Türkçe, Endonezce, Rusça, Japonca, Arapça, Urduca ve Hintçe (menü > Dil).
+- Çapraz tabakalanma, dolomitleşmiş karbonatlar ve tane boyları için daha açık adlar.
+- Derinlik ekseni aralığını kendiniz seçin (Düzen).

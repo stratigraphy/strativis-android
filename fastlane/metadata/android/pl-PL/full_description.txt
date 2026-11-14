@@ -1,0 +1,39 @@
+Strativis zamienia notatki terenowe w przejrzyste, gotowe do publikacji profile sedymentologiczne, bezpośrednio w telefonie i całkowicie offline.
+
+Profilowanie warstwa po warstwie
+- Dodawaj warstwy na górze, na dole lub w dowolnym miejscu pomiędzy; przeciągaj je, aby zmienić kolejność.
+- Każda warstwa ma mały podgląd litologii, uziarnienia i kształtu.
+- Zapisuj miąższość, litologię, uziarnienie w spągu i stropie, kontakt spągowy, kształt warstwy, powierzchnię stropową, bioturbację, struktury wewnętrzne i notatki.
+- Przechowuj kilka profili w jednym obszarze roboczym.
+
+Standardowe symbole
+- Około 190 symboli zgodnych z typowymi konwencjami profilowania sedymentologicznego: struktury sedymentacyjne, paleoprądy, skamieniałości, skamieniałości śladowe, cechy diagenetyczne i inne.
+- Przypisuj symbole bezpośrednio do warstwy lub umieszczaj je na dowolnym poziomie.
+- Kolumna reliefu (ławica, nisza, rampa, zaokrąglony), zaokrąglone narożniki warstw oraz wypukłe lub wklęsłe kontakty.
+- Paski formacji, ogniw i biozon obok profilu.
+
+Pomiary terenowe
+- Kompas z klinometrem: połóż telefon na powierzchni warstwy, laminie przekątnej, uskoku lub spękaniu, aby zmierzyć upad i kierunek upadu, wzdłuż lineacji lub osi fałdu, aby zmierzyć azymut i zanurzenie, albo skieruj go z prądem, aby zmierzyć kierunek paleoprądu. Deklinacja magnetyczna jest uwzględniana.
+- Możesz też wpisać bieg i upad (reguła prawej ręki, notacja ćwiartkowa, np. N30E) lub zaimportować je z CSV.
+- Kolumna upadów (kijanki), stereogram (siatka Schmidta) i diagram różycowy paleoprądów ze średnim wektorem.
+- Zdjęcia każdej warstwy z aparatu lub galerii, pokazane na profilu i dołączane do eksportu.
+- Miąższość rzeczywista warstwy z długości, kierunku i nachylenia taśmy oraz upadu warstw.
+- Tryb rdzenia: głębokość rośnie w dół, dla rdzeni i otworów wiertniczych.
+- Próbki, krzywe danych (promieniowanie gamma, podatność magnetyczna, izotopy, XRF), interwały Boumy, facje, ciągi systemów depozycyjnych i cykle.
+
+Kolory
+- Schemat kolorów konwencjonalny, pastelowy lub szary albo własny kolor dla każdej litologii.
+- Wybieraj kolory ze wzornika barw skał (przybliżony Munsell), z koła barw lub ze zdjęcia odsłonięcia.
+
+PDF gotowy do publikacji
+- Skala uziarnienia silikoklastyczna lub Dunhama, układ łączony lub struktury.
+- A4, A3, Letter lub Legal; rzeczywiste skale pionowe (od 1:10 do 1:1000) lub dopasowanie do strony; kilka kolumn na stronie; automatyczna legenda.
+
+Współpraca z R
+- Eksportuj profil jako ZIP z tabelą warstw, symbolami i skryptem R, gotowy do użycia z pakietami R Strativis i StratigrapheR oraz z innymi narzędziami R, takimi jak WaverideR.
+- Zapisuj i otwieraj projekty (.strata.json) oraz eksportuj warstwy jako CSV.
+
+Prywatny i bezpłatny
+- Bez konta, bez reklam, bez śledzenia. Twoje dane pozostają w telefonie. GPS jest używany tylko wtedy, gdy dotkniesz „Pobierz pozycję GPS”. Jeśli Strativis pomaga ci w pracy, możesz wesprzeć go darowizną (strona O aplikacji).
+
+Strativis rozwija dr Michiel Arts (Petrologia Osadowa, Katedra Geologii, Université de Liège). Silnikiem rysującym są pakiety R lithoglyph i Strativis, oparte na StratigrapheR (Wouters et al. 2021, The R Journal) i przeniesione do JavaScriptu, dzięki czemu aplikacja działa offline bez R. Symbole, wzory i kolory są zgodne z konwencjami zebranymi m.in. w legendzie profilowania Sedimentology Utrecht oraz w pracy Nichols (2009), Sedimentology and Stratigraphy.

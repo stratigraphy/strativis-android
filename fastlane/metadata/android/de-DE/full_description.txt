@@ -1,0 +1,39 @@
+Strativis macht aus deinen Geländenotizen saubere, publikationsreife Sedimentprofile, direkt auf deinem Handy und komplett offline.
+
+Schicht für Schicht aufnehmen
+- Schichten oben, unten oder an beliebiger Stelle dazwischen hinzufügen; zum Umordnen einfach ziehen.
+- Jede Schicht zeigt eine kleine Vorschau ihrer Lithologie, Korngröße und Form.
+- Mächtigkeit, Lithologie, Korngröße an Basis und Top, Basiskontakt, Schichtform, Oberseite, Bioturbation, interne Strukturen und Notizen erfassen.
+- Mehrere Profile in einem Arbeitsbereich.
+
+Übliche Profilsymbole
+- Rund 190 Symbole nach den gängigen sedimentologischen Konventionen: Sedimentstrukturen, Paläoströmungen, Fossilien, Spurenfossilien, diagenetische Merkmale und mehr.
+- Symbole direkt einer Schicht zuordnen oder in einem beliebigen Niveau setzen.
+- Reliefspalte (Block, Nische, Rampe, gerundet), abgerundete Schichtecken und konvexe oder konkave Kontakte.
+- Balken für Formationen, Subformationen und Biozonen neben dem Profil.
+
+Geländemessungen
+- Gefügekompass: Lege das Handy auf eine Schichtfläche, ein Leeblatt, eine Störung oder Kluft, um Fallen und Fallrichtung zu messen, entlang einer Lineation oder Faltenachse für Richtung und Abtauchen, oder richte es für Paläoströmungen in Strömungsrichtung aus. Die magnetische Deklination wird berücksichtigt.
+- Oder Streichen und Fallen eingeben (Rechte-Hand-Regel, Quadrantenschreibweise wie N30E) oder aus CSV importieren.
+- Fallspalte (Tadpole-Plot), Stereonetz (Schmidtsches Netz) und Richtungsrose der Paläoströmungen mit Vektormittel.
+- Fotos pro Schicht aus Kamera oder Galerie, im Profil dargestellt und im Export enthalten.
+- Wahre Schichtmächtigkeit aus Maßbandlänge, Richtung, Neigung und Fallen der Schichtung.
+- Kernmodus: Tiefen nehmen für Kerne und Bohrungen nach unten zu.
+- Proben, Datenkurven (Gammastrahlung, Suszeptibilität, Isotope, XRF), Bouma-Intervalle, Fazies, Systemtrakte und Zyklen.
+
+Farben
+- Konventionelle, pastellfarbene oder graue Farbschemata, oder eine eigene Farbe für jede Lithologie.
+- Farben aus einer Gesteinsfarbtafel (ungefähr Munsell), einem Farbrad oder einem Foto des Aufschlusses wählen.
+
+Publikationsreifes PDF
+- Siliziklastische Korngrößenskala oder Dunham-Skala, Layout kombiniert oder Strukturen.
+- A4, A3, Letter oder Legal; echte Vertikalmaßstäbe (1:10 bis 1:1000) oder an Seite anpassen; mehrere Spalten pro Seite; automatische Legende.
+
+Arbeitet mit R
+- Ein Profil als ZIP mit Schichttabelle, Symbolen und einem R-Skript exportieren, bereit für die R-Pakete Strativis und StratigrapheR und für andere R-Werkzeuge wie WaverideR.
+- Projekte (.strata.json) speichern und öffnen, Schichten als CSV exportieren.
+
+Privat und kostenlos
+- Kein Konto, keine Werbung, kein Tracking. Deine Daten bleiben auf deinem Handy. GPS wird nur genutzt, wenn du auf „GPS-Position abrufen“ tippst. Wenn Strativis dir bei der Arbeit hilft, kannst du es mit einer Spende unterstützen (Seite Info).
+
+Strativis wird von Dr. Michiel Arts entwickelt (Sedimentpetrologie, Department für Geologie, Université de Liège). Die Zeichenengine sind die R-Pakete lithoglyph und Strativis, aufbauend auf StratigrapheR (Wouters et al. 2021, The R Journal), nach JavaScript portiert, damit die App offline ohne R funktioniert. Symbole, Signaturen und Farben folgen Konventionen, wie sie zum Beispiel in der Utrechter Sedimentologie-Profillegende und in Nichols (2009), Sedimentology and Stratigraphy, zusammengestellt sind.

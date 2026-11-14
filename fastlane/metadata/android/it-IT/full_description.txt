@@ -1,0 +1,39 @@
+Strativis trasforma i tuoi appunti di terreno in log sedimentologici puliti e pronti per la pubblicazione, direttamente sul telefono e completamente offline.
+
+Rileva strato per strato
+- Aggiungi strati al tetto, alla base o in qualsiasi punto intermedio; trascinali per riordinarli.
+- Ogni strato mostra una piccola anteprima della sua litologia, granulometria e forma.
+- Registra spessore, litologia, granulometria alla base e al tetto, contatto basale, forma dello strato, superficie di tetto, bioturbazione, strutture interne e note.
+- Tieni più sezioni in un unico spazio di lavoro.
+
+Simboli standard per i log
+- Circa 190 simboli secondo le consuete convenzioni sedimentologiche: strutture sedimentarie, paleocorrenti, fossili, icnofossili, strutture diagenetiche e altro ancora.
+- Associa i simboli direttamente a uno strato o posizionali a qualsiasi quota.
+- Colonna del rilievo (banco, nicchia, rampa, arrotondato), angoli degli strati arrotondati e contatti convessi o concavi.
+- Barre di formazioni, membri e biozone accanto al log.
+
+Misure sul terreno
+- Bussola-clinometro: appoggia il telefono su un piano di strato, un foreset, una faglia o una diaclasi per misurare inclinazione e immersione, lungo una lineazione o un asse di piega per trend e plunge, oppure orientalo nel verso della corrente per le paleocorrenti. La declinazione magnetica viene applicata.
+- Oppure inserisci direzione e inclinazione a mano (regola della mano destra, notazione per quadranti come N30E) o importale da CSV.
+- Colonna delle inclinazioni (tadpole plot), stereogramma (reticolo di Schmidt) e diagramma a rosa delle paleocorrenti con media vettoriale.
+- Foto per ogni strato dalla fotocamera o dalla galleria, mostrate sul log e incluse nell'esportazione.
+- Spessore reale degli strati dalla lunghezza misurata con la rotella, la sua direzione, la pendenza e l'inclinazione della stratificazione.
+- Modalità carota: le profondità crescono verso il basso per carote e sondaggi.
+- Campioni, curve di dati (raggi gamma, suscettività, isotopi, XRF), intervalli di Bouma, facies, systems tract e cicli.
+
+Colori
+- Schemi di colori convenzionali, pastello o grigi, oppure un colore a tua scelta per ogni litologia.
+- Scegli i colori da una tavola dei colori delle rocce (Munsell approssimato), da una ruota dei colori o da una foto dell'affioramento.
+
+PDF pronto per la pubblicazione
+- Scala granulometrica silicoclastica o di Dunham, impaginazione combinata o a strutture.
+- A4, A3, Letter o Legal; scale verticali reali (da 1:10 a 1:1000) o adattate alla pagina; più colonne per pagina; legenda automatica.
+
+Funziona con R
+- Esporta una sezione come ZIP con la tabella degli strati, i simboli e uno script R, pronto per i pacchetti R Strativis e StratigrapheR e per altri strumenti R come WaverideR.
+- Salva e apri progetti (.strata.json) ed esporta gli strati in CSV.
+
+Privato e gratuito
+- Nessun account, nessuna pubblicità, nessun tracciamento. I tuoi dati restano sul telefono. Il GPS viene usato solo quando tocchi "Rileva posizione GPS". Se Strativis ti è utile nel lavoro, puoi sostenerlo con una donazione (pagina Informazioni).
+
+Strativis è sviluppato dal dott. Michiel Arts (Petrologia sedimentaria, Dipartimento di Geologia, Université de Liège). Il motore di disegno è costituito dai pacchetti R lithoglyph e Strativis, basati su StratigrapheR (Wouters et al. 2021, The R Journal), portati in JavaScript in modo che l'app funzioni offline senza R. Simboli, retini e colori seguono le convenzioni raccolte, per esempio, nella legenda per i log di Sedimentology Utrecht e in Nichols (2009), Sedimentology and Stratigraphy.

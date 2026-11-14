@@ -1,0 +1,3 @@
+- Strativis ora parla 15 lingue: inglese, francese, olandese, tedesco, spagnolo, portoghese, italiano, polacco, turco, indonesiano, russo, giapponese, arabo, urdu e hindi (menu > Lingua).
+- Nomi più chiari per la stratificazione incrociata, i carbonati dolomitizzati e le granulometrie.
+- Scegli tu l'intervallo dell'asse delle profondità (Impaginazione).

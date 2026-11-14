@@ -1,0 +1,3 @@
+- Strativis spreekt nu 15 talen: Engels, Frans, Nederlands, Duits, Spaans, Portugees, Italiaans, Pools, Turks, Indonesisch, Russisch, Japans, Arabisch, Urdu en Hindi (menu > Taal).
+- Duidelijkere namen voor scheve gelaagdheid, gedolomitiseerde carbonaten en korrelgroottes.
+- Kies zelf het interval van de diepte-as (Opmaak).

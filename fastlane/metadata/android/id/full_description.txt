@@ -1,0 +1,39 @@
+Strativis mengubah catatan lapangan Anda menjadi log sedimen yang rapi dan siap publikasi, langsung di ponsel dan sepenuhnya luring.
+
+Catat lapis demi lapis
+- Tambahkan lapisan di atas, di bawah atau di antara lapisan lain; seret untuk mengubah urutannya.
+- Setiap lapisan menampilkan pratinjau kecil litologi, ukuran butir dan bentuknya.
+- Catat ketebalan, litologi, ukuran butir di dasar dan puncak, kontak bawah, bentuk lapisan, permukaan atas, bioturbasi, struktur internal dan catatan.
+- Simpan beberapa penampang dalam satu ruang kerja.
+
+Simbol log standar
+- Sekitar 190 simbol sesuai konvensi log sedimentologi yang umum: struktur sedimen, arus purba, fosil, fosil jejak, gejala diagenetik dan lainnya.
+- Pasang simbol langsung pada lapisan atau tempatkan pada level mana pun.
+- Kolom relief (blok, ceruk, landai, membulat), sudut lapisan membulat serta kontak cembung atau cekung.
+- Batang formasi, anggota dan biozona di samping log.
+
+Pengukuran lapangan
+- Kompas-klinometer: letakkan ponsel pada bidang perlapisan, foreset, sesar atau kekar untuk mengukur kemiringan dan arah kemiringan, sepanjang lineasi atau sumbu lipatan untuk arah dan besar penunjaman, atau arahkan ke hilir arus untuk arus purba. Deklinasi magnetik diperhitungkan.
+- Atau ketik jurus dan kemiringan (aturan tangan kanan, notasi kuadran seperti N30E) atau impor dari CSV.
+- Kolom kemiringan (tadpole plot), stereonet (jaring Schmidt) dan diagram roset arus purba dengan rerata vektor.
+- Foto per lapisan dari kamera atau galeri, ditampilkan pada log dan disertakan dalam ekspor.
+- Ketebalan sebenarnya lapisan dari panjang pita ukur, arah, lereng dan kemiringan perlapisan.
+- Mode inti bor: kedalaman bertambah ke bawah untuk inti bor dan sumur bor.
+- Conto, kurva data (gamma ray, suseptibilitas, isotop, XRF), divisi Bouma, fasies, systems tract dan siklus.
+
+Warna
+- Skema warna konvensional, pastel atau abu-abu, atau atur warna sendiri untuk setiap litologi.
+- Pilih warna dari bagan warna batuan (perkiraan Munsell), roda warna, atau foto singkapan.
+
+PDF siap publikasi
+- Skala ukuran butir silisiklastik atau Dunham, tata letak gabungan atau struktur.
+- A4, A3, Letter atau Legal; skala vertikal sebenarnya (1:10 sampai 1:1000) atau pas halaman; beberapa kolom per halaman; legenda otomatis.
+
+Terhubung dengan R
+- Ekspor penampang sebagai ZIP berisi tabel lapisan, simbol dan skrip R, siap untuk paket R Strativis dan StratigrapheR serta perangkat R lain seperti WaverideR.
+- Simpan dan buka proyek (.strata.json) dan ekspor lapisan sebagai CSV.
+
+Privat dan gratis
+- Tanpa akun, tanpa iklan, tanpa pelacakan. Data Anda tetap di ponsel Anda. GPS hanya digunakan saat Anda mengetuk "Ambil posisi GPS". Jika Strativis membantu pekerjaan Anda, Anda dapat mendukungnya dengan donasi (halaman Tentang).
+
+Strativis dikembangkan oleh Dr Michiel Arts (Petrologi Sedimen, Departemen Geologi, Université de Liège). Mesin gambarnya adalah paket R lithoglyph dan Strativis, yang dibangun di atas StratigrapheR (Wouters et al. 2021, The R Journal), dan di-porting ke JavaScript sehingga aplikasi berjalan luring tanpa R. Simbol, pola dan warna mengikuti konvensi yang dihimpun, misalnya, dalam legenda log Sedimentology Utrecht dan Nichols (2009), Sedimentology and Stratigraphy.

@@ -1,0 +1,3 @@
+- Strativis spricht jetzt 15 Sprachen: Englisch, Französisch, Niederländisch, Deutsch, Spanisch, Portugiesisch, Italienisch, Polnisch, Türkisch, Indonesisch, Russisch, Japanisch, Arabisch, Urdu und Hindi (Menü > Sprache).
+- Klarere Namen für Schrägschichtung, dolomitisierte Karbonate und Korngrößen.
+- Intervall der Tiefenachse selbst wählen (Layout).

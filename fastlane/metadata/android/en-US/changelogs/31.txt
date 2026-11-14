@@ -1,0 +1,8 @@
+- Data curves beside the log (gamma ray, susceptibility, d13C, XRF...) from CSV.
+- Sample column: levels and sampled intervals.
+- Units: polarity, facies, environment, systems tracts, cycles, T-R triangles.
+- Bed numbers; Embry & Klovan textures; section statistics.
+- Import beds from CSV; export pages as SVG.
+- Built-in manual and ? help on every screen.
+- Faults with dip and movement, also inside beds.
+- Page Fit; SI or imperial units.

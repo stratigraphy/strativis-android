@@ -1,0 +1,39 @@
+Strativis, arazi notlarınızı doğrudan telefonunuzda ve tamamen çevrimdışı olarak temiz, yayına hazır sedimantolojik loglara dönüştürür.
+
+Tabaka tabaka loglama
+- Tabakaları en üste, en alta veya aradaki herhangi bir yere ekleyin; sıralamak için sürükleyin.
+- Her tabaka litolojisinin, tane boyunun ve biçiminin küçük bir önizlemesini gösterir.
+- Kalınlık, litoloji, taban ve tavanda tane boyu, taban dokanağı, tabaka biçimi, üst yüzey, biyotürbasyon, iç yapılar ve notları kaydedin.
+- Tek bir çalışma alanında birden çok kesit tutun.
+
+Standart log simgeleri
+- Yaygın sedimantolojik loglama kurallarına uygun yaklaşık 190 simge: sedimanter yapılar, paleoakıntılar, fosiller, iz fosiller, diyajenetik özellikler ve daha fazlası.
+- Simgeleri doğrudan bir tabakaya bağlayın veya herhangi bir seviyeye yerleştirin.
+- Rölyef sütunu (bank, niş, rampa, yuvarlak), yuvarlatılmış tabaka köşeleri ve dışbükey veya içbükey dokanaklar.
+- Logun yanında formasyon, üye ve biyozon çubukları.
+
+Arazi ölçümleri
+- Pusula-klinometre: eğim ve eğim yönünü ölçmek için telefonu tabaka düzlemine, ön tabakaya, faya veya ekleme koyun; gidiş ve dalım için lineasyon veya kıvrım ekseni boyunca yerleştirin ya da paleoakıntılar için akıntı yönüne çevirin. Manyetik sapma uygulanır.
+- Ya da doğrultu ve eğimi elle girin (sağ el kuralı, N30E gibi kadran gösterimi) veya CSV'den içe aktarın.
+- Eğim sütunu (iribaş diyagramı), stereonet (Schmidt ağı) ve vektör ortalamalı paleoakıntı gül diyagramı.
+- Kameradan veya galeriden tabaka başına fotoğraflar; logda gösterilir ve dışa aktarıma eklenir.
+- Şerit uzunluğu, yönü, eğimi ve tabaka eğiminden gerçek tabaka kalınlığı.
+- Karot modu: karotlar ve sondaj kuyuları için derinlik aşağı doğru artar.
+- Örnekler, veri eğrileri (gama ışını, duyarlılık, izotoplar, XRF), Bouma bölümleri, fasiyesler, sistem dizileri ve döngüler.
+
+Renkler
+- Geleneksel, pastel veya gri renk şemaları ya da her litoloji için kendi renginiz.
+- Renkleri kaya rengi kartından (yaklaşık Munsell), renk çarkından veya mostranın bir fotoğrafından seçin.
+
+Yayına hazır PDF
+- Silisiklastik veya Dunham tane boyu ölçeği, birleşik veya yapılar düzeni.
+- A4, A3, Letter veya Legal; gerçek düşey ölçekler (1:10 ile 1:1000 arası) veya sayfaya sığdırma; sayfa başına birden çok sütun; otomatik lejant.
+
+R ile uyumlu
+- Bir kesiti tabaka tablosu, simgeler ve bir R betiğiyle birlikte ZIP olarak dışa aktarın; Strativis ve StratigrapheR R paketleri ve WaverideR gibi diğer R araçları için hazırdır.
+- Projeleri (.strata.json) kaydedin ve açın, tabakaları CSV olarak dışa aktarın.
+
+Gizli ve ücretsiz
+- Hesap yok, reklam yok, izleme yok. Verileriniz telefonunuzda kalır. GPS yalnızca "GPS konumunu al" düğmesine dokunduğunuzda kullanılır. Strativis çalışmanıza yardımcı oluyorsa, onu bir bağışla destekleyebilirsiniz (Hakkında sayfası).
+
+Strativis, Dr. Michiel Arts (Sedimanter Petroloji, Jeoloji Bölümü, Université de Liège) tarafından geliştirilmektedir. Çizim motoru, StratigrapheR (Wouters et al. 2021, The R Journal) üzerine kurulu lithoglyph ve Strativis R paketleridir; uygulamanın R olmadan çevrimdışı çalışması için JavaScript'e aktarılmıştır. Simgeler, desenler ve renkler, örneğin Sedimentology Utrecht log lejantında ve Nichols (2009), Sedimentology and Stratigraphy kitabında derlenen kurallara uyar.

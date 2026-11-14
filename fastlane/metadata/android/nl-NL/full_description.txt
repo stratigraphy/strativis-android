@@ -1,0 +1,39 @@
+Strativis maakt van je veldnotities nette, publicatieklare sedimentaire logs, rechtstreeks op je telefoon en volledig offline.
+
+Laag voor laag loggen
+- Voeg lagen toe aan de top, de basis of ergens daartussen; sleep ze om de volgorde te wijzigen.
+- Elke laag toont een kleine tekening van haar lithologie, korrelgrootte en vorm.
+- Noteer dikte, lithologie, korrelgrootte aan basis en top, basiscontact, laagvorm, bovenvlak, bioturbatie, interne structuren en notities.
+- Bewaar meerdere secties in één werkruimte.
+
+Standaard logsymbolen
+- Ongeveer 190 symbolen volgens de gangbare sedimentologische conventies: sedimentaire structuren, paleostromingen, fossielen, sporenfossielen, diagenetische kenmerken en meer.
+- Koppel symbolen direct aan een laag of plaats ze op elk gewenst niveau.
+- Reliëfkolom (bank, nis, talud, afgerond), afgeronde laaghoeken en convexe of concave contacten.
+- Balken voor formaties, laagpakketten en biozones naast de log.
+
+Veldmetingen
+- Kompas-clinometer: leg de telefoon op een laagvlak, foreset, breuk of diaklaas om helling en hellingsrichting te meten, langs een lineatie of plooias voor duikrichting en duik, of richt hem stroomafwaarts voor paleostromingen. De magnetische declinatie wordt toegepast.
+- Of voer strekking en helling in (rechterhandregel, kwadrantnotatie zoals N30E) of importeer ze uit CSV.
+- Hellingskolom (kikkervisjes), stereonet (Schmidt-net) en rozediagram van de paleostromingen met vectorgemiddelde.
+- Foto's per laag uit de camera of galerij, getoond op de log en meegenomen in de export.
+- Ware laagdikte uit lengte, richting en helling van het meetlint en de helling van de gelaagdheid.
+- Kernmodus: diepten nemen naar beneden toe, voor kernen en boringen.
+- Monsters, datacurves (gammastraling, susceptibiliteit, isotopen, XRF), Bouma-intervallen, facies, systeemtracts en cycli.
+
+Kleuren
+- Conventionele, pastel- of grijze kleurschema's, of een eigen kleur per lithologie.
+- Kies kleuren uit een gesteentekleurenkaart (bij benadering Munsell), een kleurenwiel of een foto van de ontsluiting.
+
+Publicatieklare PDF
+- Siliciklastische korrelgrootteschaal of Dunham-schaal, gecombineerde opmaak of structuuropmaak.
+- A4, A3, Letter of Legal; ware verticale schalen (1:10 tot 1:1000) of passend op pagina; meerdere kolommen per pagina; automatische legenda.
+
+Werkt met R
+- Exporteer een sectie als ZIP met de lagentabel, de symbolen en een R-script, klaar voor de R-pakketten Strativis en StratigrapheR en voor andere R-tools zoals WaverideR.
+- Sla projecten op en open ze (.strata.json) en exporteer lagen als CSV.
+
+Privé en gratis
+- Geen account, geen advertenties, geen tracking. Je gegevens blijven op je telefoon. GPS wordt alleen gebruikt als je op "GPS-positie ophalen" tikt. Helpt Strativis je bij je werk, dan kun je de app steunen met een donatie (pagina Over).
+
+Strativis wordt ontwikkeld door dr. Michiel Arts (Sedimentary Petrology, Department of Geology, Université de Liège). De tekenmotor bestaat uit de R-pakketten lithoglyph en Strativis, gebouwd op StratigrapheR (Wouters et al. 2021, The R Journal), en is overgezet naar JavaScript zodat de app offline werkt zonder R. Symbolen, patronen en kleuren volgen conventies die onder meer zijn samengebracht in de logginglegenda van Sedimentology Utrecht en in Nichols (2009), Sedimentology and Stratigraphy.

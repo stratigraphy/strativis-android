@@ -1,0 +1,39 @@
+O Strativis transforma suas anotações de campo em perfis sedimentares limpos e prontos para publicação, direto no celular e totalmente offline.
+
+Camada por camada
+- Adicione camadas no topo, na base ou em qualquer ponto entre elas; arraste-as para reordenar.
+- Cada camada mostra uma pequena prévia da sua litologia, granulometria e forma.
+- Registre espessura, litologia, granulometria na base e no topo, contato basal, forma da camada, superfície de topo, bioturbação, estruturas internas e notas.
+- Mantenha várias seções num mesmo espaço de trabalho.
+
+Símbolos padrão de perfis
+- Cerca de 190 símbolos segundo as convenções usuais de perfis sedimentológicos: estruturas sedimentares, paleocorrentes, fósseis, icnofósseis, feições diagenéticas e mais.
+- Associe símbolos diretamente a uma camada ou coloque-os em qualquer nível.
+- Coluna de relevo (banco, reentrância, rampa, arredondado), cantos arredondados e contatos convexos ou côncavos.
+- Barras de formações, membros e biozonas ao lado do perfil.
+
+Medidas de campo
+- Bússola-clinômetro: apoie o celular num plano de acamamento, lâmina frontal, falha ou junta para medir o mergulho e a direção de mergulho, ao longo de uma lineação ou eixo de dobra para o sentido e o caimento, ou aponte-o no sentido da corrente para paleocorrentes. A declinação magnética é aplicada.
+- Ou digite direção e mergulho (regra da mão direita, notação de quadrantes como N30E) ou importe-os de um CSV.
+- Coluna de mergulho (diagrama de girinos), estereograma (rede de Schmidt) e diagrama de roseta de paleocorrentes com média vetorial.
+- Fotos por camada, da câmera ou da galeria, mostradas no perfil e incluídas na exportação.
+- Espessura real da camada a partir do comprimento da trena, sua direção, inclinação e o mergulho do acamamento.
+- Modo testemunho: as profundidades crescem para baixo, para testemunhos e poços.
+- Amostras, curvas de dados (raios gama, suscetibilidade, isótopos, XRF), divisões de Bouma, fácies, tratos de sistemas e ciclos.
+
+Cores
+- Esquemas de cores convencional, pastel ou cinza, ou defina sua própria cor para cada litologia.
+- Escolha cores numa carta de cores de rochas (Munsell aproximado), numa roda de cores ou numa foto do afloramento.
+
+PDF pronto para publicação
+- Escala granulométrica siliciclástica ou de Dunham, layout combinado ou de estruturas.
+- A4, A3, Carta ou Ofício; escalas verticais reais (1:10 a 1:1000) ou ajuste à página; várias colunas por página; legenda automática.
+
+Funciona com R
+- Exporte uma seção como ZIP com a tabela de camadas, os símbolos e um script R, pronto para os pacotes R Strativis e StratigrapheR e para outras ferramentas R como o WaverideR.
+- Salve e abra projetos (.strata.json) e exporte camadas em CSV.
+
+Privado e gratuito
+- Sem conta, sem anúncios, sem rastreamento. Seus dados ficam no seu celular. O GPS só é usado quando você toca em "Obter posição GPS". Se o Strativis ajuda no seu trabalho, você pode apoiá-lo com uma doação (página Sobre).
+
+O Strativis é desenvolvido pelo Dr. Michiel Arts (Petrologia Sedimentar, Departamento de Geologia, Université de Liège). O motor de desenho são os pacotes R lithoglyph e Strativis, baseados no StratigrapheR (Wouters et al. 2021, The R Journal), portados para JavaScript para que o aplicativo funcione offline sem R. Símbolos, padrões e cores seguem convenções compiladas, por exemplo, na legenda de perfis Sedimentology Utrecht e em Nichols (2009), Sedimentology and Stratigraphy.

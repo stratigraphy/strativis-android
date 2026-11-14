@@ -1,0 +1,39 @@
+Strativis transforme vos notes de terrain en logs sédimentaires nets, prêts à publier, directement sur votre téléphone et entièrement hors ligne.
+
+Levé banc par banc
+- Ajoutez des bancs au sommet, à la base ou n'importe où entre les deux ; faites-les glisser pour les réordonner.
+- Chaque banc montre un petit aperçu de sa lithologie, de sa granulométrie et de sa forme.
+- Notez l'épaisseur, la lithologie, la granulométrie à la base et au sommet, le contact basal, la forme du banc, la surface sommitale, la bioturbation, les structures internes et des notes.
+- Gardez plusieurs coupes dans un même espace de travail.
+
+Symboles de levé standard
+- Environ 190 symboles suivant les conventions habituelles des logs sédimentologiques : structures sédimentaires, paléocourants, fossiles, traces fossiles, figures diagénétiques et plus encore.
+- Rattachez les symboles directement à un banc ou placez-les à n'importe quel niveau.
+- Colonne de relief (bloc, niche, rampe, arrondi), coins de bancs arrondis et contacts convexes ou concaves.
+- Barres de formations, de membres et de biozones à côté du log.
+
+Mesures de terrain
+- Boussole-clinomètre : posez le téléphone sur un plan de stratification, une lamine frontale, une faille ou une diaclase pour mesurer le pendage et son azimut, le long d'une linéation ou d'un axe de pli pour l'azimut et le plongement, ou pointez-le vers l'aval pour les paléocourants. La déclinaison magnétique est appliquée.
+- Ou saisissez direction et pendage (règle de la main droite, notation en quadrants comme N30E) ou importez-les depuis un CSV.
+- Colonne de pendage (têtards), stéréogramme (canevas de Schmidt) et diagramme en rose des paléocourants avec moyenne vectorielle.
+- Photos par banc depuis l'appareil photo ou la galerie, affichées sur le log et incluses dans l'export.
+- Épaisseur vraie des bancs à partir de la longueur, de la direction et de la pente du décamètre et du pendage des couches.
+- Mode carotte : profondeurs croissantes vers le bas pour les carottes et les forages.
+- Échantillons, courbes de données (gamma ray, susceptibilité, isotopes, XRF), termes de Bouma, faciès, cortèges sédimentaires et cycles.
+
+Couleurs
+- Jeux de couleurs conventionnel, pastel ou gris, ou votre propre couleur pour chaque lithologie.
+- Choisissez les couleurs dans une charte des couleurs de roches (Munsell approché), sur une roue chromatique ou sur une photo de l'affleurement.
+
+PDF prêt à publier
+- Échelle granulométrique silicoclastique ou de Dunham, mise en page combinée ou structures.
+- A4, A3, Letter ou Legal ; vraies échelles verticales (1:10 à 1:1000) ou ajustement à la page ; plusieurs colonnes par page ; légende automatique.
+
+Compatible avec R
+- Exportez une coupe en ZIP avec le tableau des bancs, les symboles et un script R, prêt pour les packages R Strativis et StratigrapheR et pour d'autres outils R comme WaverideR.
+- Enregistrez et ouvrez des projets (.strata.json) et exportez les bancs en CSV.
+
+Privé et gratuit
+- Pas de compte, pas de publicité, pas de suivi. Vos données restent sur votre téléphone. Le GPS n'est utilisé que lorsque vous touchez « Obtenir la position GPS ». Si Strativis vous aide dans votre travail, vous pouvez le soutenir par un don (page À propos).
+
+Strativis est développé par le Dr Michiel Arts (Pétrologie sédimentaire, Département de géologie, Université de Liège). Le moteur de dessin repose sur les packages R lithoglyph et Strativis, construits sur StratigrapheR (Wouters et al. 2021, The R Journal), portés en JavaScript pour que l'application fonctionne hors ligne sans R. Les symboles, motifs et couleurs suivent les conventions compilées, par exemple, dans la légende de levé de Sedimentology Utrecht et dans Nichols (2009), Sedimentology and Stratigraphy.

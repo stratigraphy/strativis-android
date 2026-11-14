@@ -1,0 +1,5 @@
+- First public release (1.2.0).
+- Targets Android 16; edge-to-edge screens and the new back gesture.
+- Natural rock colours for limestones and dolostones.
+- Clearer niche symbol in the relief column.
+- New "structures" layout name.

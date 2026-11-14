@@ -1,0 +1,28 @@
+# Build output
+build/
+app/build/
+app/play/
+app/direct/
+app/release/
+*.apk
+*.aab
+*.idsig
+
+# Android Studio / Gradle local files
+.gradle/
+.kotlin/
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing keys and passwords: never commit these
+*.jks
+*.keystore
+*.p12
+keystore.properties
+
+# Google Play notes kept only on the developer's PC
+PLAY_STORE_GUIDE.txt

@@ -1,0 +1,39 @@
+Strativis turns your field notes into clean, publication-ready sedimentary logs, right on your phone and fully offline.
+
+Log bed by bed
+- Add beds at the top, the bottom or anywhere in between; drag them to reorder.
+- Each bed shows a small preview of its lithology, grain size and shape.
+- Record thickness, lithology, grain size at base and top, base contact, bed shape, top surface, bioturbation, internal structures and notes.
+- Keep several sections in one workspace.
+
+Standard logging symbols
+- About 190 symbols following the usual sedimentological logging conventions: sedimentary structures, palaeocurrents, fossils, trace fossils, diagenetic features and more.
+- Attach symbols directly to a bed or place them at any level.
+- Relief column (bank, niche, ramp, rounded), rounded bed corners and convex or concave contacts.
+- Formation, member and biozone bars beside the log.
+
+Field measurements
+- Compass-clinometer: lay the phone on a bedding plane, foreset, fault or joint to measure dip and dip direction, along a lineation or fold axis for trend and plunge, or point it down-current for palaeocurrents. Magnetic declination is applied.
+- Or type strike and dip in (right-hand rule, quadrant notation such as N30E) or import them from CSV.
+- Dip column (tadpole plot), stereonet (Schmidt net) and palaeocurrent rose diagram with vector mean.
+- Photos per bed from the camera or gallery, shown on the log and included in the export.
+- True bed thickness from tape length, direction, slope and bedding dip.
+- Core mode: depths increase downwards for cores and boreholes.
+- Samples, data curves (gamma ray, susceptibility, isotopes, XRF), Bouma divisions, facies, systems tracts and cycles.
+
+Colours
+- Conventional, pastel or grey colour schemes, or set your own colour for each lithology.
+- Pick colours from a rock-colour chart (approximate Munsell), a colour wheel, or a photo of the outcrop.
+
+Publication-ready PDF
+- Siliciclastic or Dunham grain-size scale, combined or structures layout.
+- A4, A3, Letter or Legal; true vertical scales (1:10 to 1:1000) or fit to page; several columns per page; automatic legend.
+
+Works with R
+- Export a section as a ZIP with the bed table, symbols and an R script, ready for the Strativis and StratigrapheR R packages and for other R tools such as WaverideR.
+- Save and open projects (.strata.json) and export beds as CSV.
+
+Private and free
+- No account, no adverts, no tracking. Your data stays on your phone. GPS is used only when you tap "Get GPS position". If Strativis helps your work, you can support it with a donation (About page).
+
+Strativis is developed by Dr Michiel Arts (Sedimentary Petrology, Department of Geology, Université de Liège). The drawing engine is the R packages lithoglyph and Strativis, built on StratigrapheR (Wouters et al. 2021, The R Journal), ported to JavaScript so the app works offline without R. Symbols, patterns and colours follow conventions compiled in, for example, the Sedimentology Utrecht logging legend and Nichols (2009), Sedimentology and Stratigraphy.

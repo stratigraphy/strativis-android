@@ -1,0 +1,7 @@
+- Depth axis interval: choose the spacing of the numbered depth ticks yourself (Layout), or leave it automatic.
+- Measure strike and dip with the phone (compass-clinometer) or type them in: bedding, cross-beds, faults, joints, lineations, fold axes.
+- Dip column (tadpoles) and stereonet; palaeocurrent rose diagram.
+- Photos per bed, in the log and the ZIP export.
+- Core mode: depth increases downwards.
+- True thickness from dip; Bouma divisions.
+- Orientations from CSV.

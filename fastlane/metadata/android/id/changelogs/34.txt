@@ -1,0 +1,3 @@
+- Strativis kini tersedia dalam 15 bahasa: Inggris, Prancis, Belanda, Jerman, Spanyol, Portugis, Italia, Polandia, Turki, Indonesia, Rusia, Jepang, Arab, Urdu dan Hindi (menu > Bahasa).
+- Nama yang lebih jelas untuk perlapisan silang-siur, karbonat terdolomitisasi dan ukuran butir.
+- Pilih sendiri interval sumbu kedalaman (Tata letak).
