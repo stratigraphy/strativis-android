@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f3a4d">
+<title>Strativis</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Strativis">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script src="web.js"></script>
+</head>
+<body>
+<header class="bar">
+  <span class="brand">Strativis</span>
+  <span class="spacer"></span>
+  <button id="btn-pdf" class="accent" disabled>PDF</button>
+  <button id="btn-menu" aria-label="Menu">&#8942;</button>
+</header>
+<div id="menu" class="menu hidden">
+  <button data-act="new">New section</button>
+  <button data-act="duplicate">Duplicate section</button>
+  <button data-act="open">Open project(s)&hellip;</button>
+  <button data-act="save">Save section (.strata.json)</button>
+  <button data-act="export">Export section for R (ZIP)</button>
+  <button data-act="export-all">Export all sections (ZIP)</button>
+  <button data-act="csv">Export beds (CSV)</button>
+  <button data-act="import-beds">Import beds (CSV)&hellip;</button>
+  <button data-act="svg">Export pages as SVG</button>
+  <button data-act="example">Add example section</button>
+  <button data-act="delete">Delete section</button>
+  <button data-act="donate">♥ Support Strativis (donate)</button>
+  <button data-act="language">Language</button>
+  <button data-act="manual">Manual</button>
+  <button data-act="about">About</button>
+</div>
+<input type="file" id="file-csv" accept=".csv,.txt,.tsv,text/csv,text/plain" class="hidden">
+<input type="file" id="file-open" accept=".json,application/json,text/plain" multiple class="hidden">
+
+<main>
+  <section id="tab-section" class="tab">
+    <div class="card">
+      <div class="row-head"><h2>Sections</h2><span class="spacer"></span>
+        <button id="sec-new" class="small">+ New</button><button class="small help" data-help="section" aria-label="Help">?</button></div>
+      <ol id="sec-list" class="list"></ol>
+      <div class="actions">
+        <button id="sec-dup" class="small">Duplicate</button>
+        <button id="sec-export" class="small">Export for R (ZIP)</button>
+        <button id="sec-del" class="small danger">Delete</button>
+      </div>
+    </div>
+    <h2>Section details</h2>
+    <div class="grid">
+      <label class="full">Title<input data-meta="title"></label>
+      <label>Section / log<input data-meta="section"></label>
+      <label>Location<input data-meta="location"></label>
+      <label>Latitude<input data-meta="latitude"></label>
+      <label>Longitude<input data-meta="longitude"></label>
+      <label>Elevation<input data-meta="elevation"></label>
+      <label>Date<input data-meta="date" type="text" placeholder="YYYY-MM-DD"></label>
+      <label class="full">Author<input data-meta="author"></label>
+      <label class="full">Notes<textarea data-meta="notes" rows="3"></textarea></label>
+    </div>
+    <p class="hint">Use your phone's location: <button id="btn-gps" class="small">Get GPS position</button></p>
+    <label class="lang-row"><span>Language</span> <select id="lang-sel" data-no-i18n></select></label>
+    <h2>Statistics</h2>
+    <div id="stats" class="card stats-box"></div>
+    <p class="hint about-foot">Strativis is free. <button id="about-link" class="linkbtn">About and donations</button></p>
+  </section>
+
+  <section id="tab-beds" class="tab hidden">
+    <div class="row-head"><h2>Beds</h2><span class="spacer"></span>
+      <button id="bed-add-top" class="small">+ Top</button>
+      <button id="bed-add-bottom" class="small">+ Bottom</button><button class="small help" data-help="beds" aria-label="Help">?</button></div>
+    <p class="hint">Top of the section first. Tap a bed to edit it. To move a bed, press &equiv; on its left and drag it up or down, or press and hold the bed anywhere. &#10697; copies a bed on top of itself; + between beds inserts one.</p>
+    <ol id="bed-list" class="list"></ol>
+  </section>
+
+  <section id="tab-symbols" class="tab hidden">
+    <div class="row-head"><h2>Extra symbols</h2><span class="spacer"></span>
+      <button id="sym-add" class="small">+ Symbol</button><button class="small help" data-help="symbols" aria-label="Help">?</button></div>
+    <p class="hint">Palaeocurrents, structures or fossils at a given level.</p>
+    <ol id="sym-list" class="list"></ol>
+    <div class="row-head"><h2>Samples</h2><span class="spacer"></span>
+      <button id="smp-import" class="small">Import CSV</button>
+      <button id="smp-add" class="small">+ Sample</button></div>
+    <p class="hint">Sample labels at a level, or over an interval, drawn in a Samples column.</p>
+    <ol id="smp-list" class="list"></ol>
+    <div class="row-head"><h2>Data curves</h2><span class="spacer"></span>
+      <button id="crv-import" class="small">Import CSV</button>
+      <button id="crv-add" class="small">+ Curve</button></div>
+    <p class="hint">Measurements along the section (gamma ray, magnetic susceptibility, d13C, XRF&hellip;), each drawn in its own column right of the log. A CSV file with a level column and one column per curve, e.g. level;GR (API);MS (SI), adds all its curves at once.</p>
+    <ol id="crv-list" class="list"></ol>
+    <div class="row-head"><h2>Orientations</h2><span class="spacer"></span>
+      <button id="ori-measure" class="small">Measure</button>
+      <button id="ori-import" class="small">CSV</button>
+      <button id="ori-add" class="small">+ Add</button><button class="small help" data-help="orientations" aria-label="Help">?</button></div>
+    <p class="hint">Strike and dip of bedding, cross-beds, faults, joints, cleavage, veins; trend and plunge of lineations and fold axes; palaeocurrent directions. Type them in, or lay the phone on the surface and measure them with its compass and clinometer. Drawn as a dip column (tadpoles) and a stereonet.</p>
+    <ol id="ori-list" class="list"></ol>
+    <div class="twin">
+      <div><h3>Stereonet</h3><div id="stereo-box" class="card plot-box"></div></div>
+      <div><h3>Palaeocurrents</h3><div id="rose-box" class="card plot-box"></div></div>
+    </div>
+    <div id="ori-stats" class="hint"></div>
+  </section>
+
+  <section id="tab-units" class="tab hidden">
+    <div class="row-head"><h2>Stratigraphic units</h2><span class="spacer"></span>
+      <button id="unit-add" class="small">+ Unit</button><button class="small help" data-help="units" aria-label="Help">?</button></div>
+    <p class="hint">Groups, formations, members, beds, stages, biozones&hellip; Each unit has a rank; the ranks are drawn as columns left of the log, the highest on the left (Group, Formation, Member, Bed).</p>
+    <ol id="unit-list" class="list"></ol>
+  </section>
+
+  <section id="tab-layout" class="tab hidden">
+    <div class="row-head"><h2>Layout</h2><span class="spacer"></span><button class="small help" data-help="layout" aria-label="Help">?</button></div>
+    <div class="grid">
+      <label>Layout<select data-opt="layout"><option>combined</option><option>structures</option></select></label>
+      <label>Profile scale<select data-opt="scale"><option>siliciclastic</option><option>dunham</option></select></label>
+      <label>Colours<select data-opt="colours"><option>conventional</option><option>pastel</option><option>grey</option><option>none</option></select></label>
+      <label>Page<select data-opt="page"><option>A4</option><option>A3</option><option>Letter</option><option>Legal</option><option value="Fit">Fit (one long page)</option></select></label>
+      <label>Orientation<select data-opt="orientation"><option>portrait</option><option>landscape</option></select></label>
+      <label>Vertical scale<select data-opt="vscale">
+        <option value="fit">fit to page</option><option value="10">1:10</option><option value="20">1:20</option>
+        <option value="25">1:25</option><option value="50">1:50</option><option value="100">1:100</option>
+        <option value="200">1:200</option><option value="500">1:500</option><option value="1000">1:1000</option></select></label>
+      <label>Columns per page<select data-opt="panels"><option>auto</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+      <label>Relief<select data-opt="relief_style"><option>beds</option><option>smooth</option></select></label>
+      <label>Depth unit<select data-opt="unit"><optgroup label="SI (metric)"><option value="m">m</option><option value="cm">cm</option><option value="mm">mm</option></optgroup><optgroup label="Imperial"><option value="ft">ft</option><option value="in">in</option></optgroup></select></label>
+      <label><span><span>Depth axis interval</span> (<span class="du">m</span>)</span><input data-opt="tick_step" type="text" inputmode="decimal" autocomplete="off" placeholder="auto" data-num data-auto data-min="0"></label>
+      <label>Depth axis minor ticks<select data-opt="minor_ticks" data-num><option value="0">none</option><option value="2">2 per interval</option><option value="4">4 per interval</option><option value="5">5 per interval</option><option value="10">10 per interval</option></select></label>
+      <label>Sizes in<select data-opt="size_unit"><option value="mm">mm (SI)</option><option value="in">inches (imperial)</option></select></label>
+      <label><span id="base-label">Base level</span><input data-opt="base" type="text" inputmode="decimal" autocomplete="off" data-num></label>
+      <label>Rose classes<select data-opt="rose_bin" data-num><option value="10">10°</option><option value="15">15°</option><option value="20">20°</option><option value="30">30°</option><option value="45">45°</option></select></label>
+      <label>Magnetic declination (°, east +)<input data-opt="declination" type="text" inputmode="decimal" autocomplete="off" data-num data-min="-90" data-max="90"></label>
+      <label><span>Grain class width <span class="lu">(mm)</span></span><input data-len data-opt="class_width" type="text" inputmode="decimal" autocomplete="off" data-num data-min="0.05" data-max="0.4"></label>
+      <label><span>Description width <span class="lu">(mm)</span></span><input data-len data-opt="description_width" type="text" inputmode="decimal" autocomplete="off" data-num data-min="0.3" data-max="4"></label>
+      <label><span>Symbol size <span class="lu">(mm)</span></span><input data-len data-opt="symbol_size" type="text" inputmode="decimal" autocomplete="off" data-num data-min="0.05" data-max="0.4"></label>
+      <label>Pattern size<input data-opt="pattern_scale" type="text" inputmode="decimal" autocomplete="off" data-num data-min="0.3" data-max="3"></label>
+      <label><span>Corner radius <span class="lu">(mm)</span></span><input data-len data-opt="corner" type="text" inputmode="decimal" autocomplete="off" data-num data-min="0" data-max="0.2"></label>
+      <label><span>Contact relief <span class="lu">(mm)</span></span><input data-len data-opt="amp" type="text" inputmode="decimal" autocomplete="off" data-num data-min="0" data-max="0.3"></label>
+      <label class="check"><input data-opt="legend" type="checkbox"> Legend</label>
+      <label class="check"><input data-opt="bed_numbers" type="checkbox"> Bed numbers</label>
+      <label class="check"><input data-opt="stack" type="checkbox"> Stack beds from thickness</label>
+      <label class="check"><input data-opt="core" type="checkbox"> Core log (depth downwards)</label>
+      <label class="check"><input data-opt="rose" type="checkbox"> Palaeocurrent rose on the PDF</label>
+      <label class="check"><input data-opt="stereonet" type="checkbox"> Stereonet on the PDF</label>
+    </div>
+    <h2>Lithology colours</h2>
+    <p class="hint">Tap a lithology to give all its beds one colour (presets, colour wheel or a photo).</p>
+    <ol id="litho-colours" class="list"></ol>
+  </section>
+
+  <section id="tab-preview" class="tab hidden">
+    <div class="row-head">
+      <button id="pv-prev" class="small">&lsaquo;</button>
+      <span id="pv-page">Page 1</span>
+      <button id="pv-next" class="small">&rsaquo;</button>
+      <span class="spacer"></span>
+      <button id="pv-zoom-out" class="small">&minus;</button>
+      <button id="pv-zoom-in" class="small">+</button>
+      <button id="pv-refresh" class="small">Refresh</button>
+      <button class="small help" data-help="preview" aria-label="Help">?</button>
+    </div>
+    <p id="pv-status" class="hint"></p>
+    <div class="pv-wrap"><div id="pv-svg"></div></div>
+  </section>
+</main>
+
+<nav class="tabs">
+  <button data-tab="section" class="on">Section</button>
+  <button data-tab="beds">Beds</button>
+  <button data-tab="symbols">Data</button>
+  <button data-tab="units">Units</button>
+  <button data-tab="layout">Layout</button>
+  <button data-tab="preview">Preview</button>
+</nav>
+
+<div id="sheet" class="sheet hidden">
+  <div class="sheet-body">
+    <div class="row-head"><h2 id="sheet-title">Edit</h2><span class="spacer"></span>
+      <button id="sheet-help" class="small help" data-help="bed" aria-label="Help">?</button>
+      <button id="sheet-close" class="small">Done</button></div>
+    <div id="sheet-actions" class="actions"></div>
+    <div id="sheet-form"></div>
+  </div>
+</div>
+
+<div id="busy" class="busy"><div class="spinner"></div><p id="busy-text">Loading Strativis&hellip;</p></div>
+<div id="toast" class="toast hidden"></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
