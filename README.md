@@ -16,6 +16,7 @@ Draw publication-ready sedimentary logs in the field, on your phone and fully of
 * **GitHub:** the APK under [Releases](../../releases). Allow "Install unknown apps" for your browser when Android asks.
 * **F-Droid:** [f-droid.org/packages/org.strativis.app](https://f-droid.org/packages/org.strativis.app/) (after the F-Droid review).
 * **Google Play:** coming soon.
+* **iPhone and iPad:** open [stratigraphy.github.io/strativis-android](https://stratigraphy.github.io/strativis-android/) in Safari and add it to the home screen (the page shows how). It works offline and keeps your sections on the device; no App Store or account needed.
 
 Install from one source only: the versions are signed with different keys, so you cannot update one with another without uninstalling first (export your sections before uninstalling).
 
@@ -27,6 +28,7 @@ The app is a small Java wrapper (`app/src/main/java`) around a web interface (`a
 * `engine/lg_*.js`: lithoglyph (patterns, colours, symbols, beds, relief, log columns).
 * `engine/sv_*.js`: Strativis (projects, page layout, legend, export for R).
 * `tools/make_metrics.R`: generates the font metrics in `engine/metrics.js`.
+* `web/`: the iPhone and iPad version, the same web interface as a web app. `Rscript web/build_site.R site` builds it; the `gh-pages` branch holds the published copy.
 
 ## Building
 
